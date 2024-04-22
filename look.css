@@ -1,0 +1,272 @@
+  @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet");
+
+  body {
+    padding-top: 90px;
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 85px;
+    background-image: url("https://i.pinimg.com/564x/8c/2c/c6/8c2cc69cbcaef070ac2ff377e5ef561f.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    box-sizing: border-box;
+  }
+
+  header,
+  section,
+  footer,
+  aside,
+  nav,
+  aritcle,
+  figure,
+  figcaption {
+    display: block;
+  }
+
+  body {
+    margin: 0;
+    font-family: Lato;
+  }
+
+
+  nav {
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+  }
+
+  article {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+  }
+
+  hgroup {
+    margin-top: 80px;
+  }
+
+  figure {
+    float: left;
+    width: 290px;
+    height: 220px;
+    padding: 5px;
+    margin: 50px;
+    border: 1px solid #eeeeee;
+  }
+
+  figcaption {
+    font-size: 90%;
+    text-align: left;
+  }
+
+  container {
+    box-sizing: border-box;
+
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  input[type=submit] {
+    background-color: #f4511e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .button {
+    background-color: #f4511e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.2s ease;
+  }
+
+  .button:hover {
+    background-color: #242424;
+  }
+
+  .popup {
+    width: 400px;
+    background-color: #f4511e;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    color: #fff;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+
+  .open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .popup p {
+    font-size: 35px;
+    font-weight: 80;
+    margin: 30px 0px 10px;
+  }
+
+  .popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0px;
+    background-color: #fff;
+    color: #242424;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .popup button:hover {
+    background-color: #242424;
+    color: #fff;
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 33.33%;
+  }
+
+  a,
+  h1,
+  h2,
+  h3,
+  .col-25 {
+    font-family: Merriweather, serif;
+    font-weight: bold;
+    color: #fce5fc;
+  }
+
+  .col-75 {
+    font-family: Merriweather, serif;
+    font-style: italic;
+    color: #242424;
+  }
+
+  a {
+    color: #de6581;
+    text-decoration: none;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  footer {
+    background-color: #242424;
+    color: #fff;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+  }
+
+  footer audio {
+    float: left;
+  }
+
+  footer p {
+    margin-right: 5px;
+  }

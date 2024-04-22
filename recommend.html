@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Recommend Faves</title>
+  <link type="text/css" rel="stylesheet" href="look.css" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <li class="logo">
+          <a href="index.html"> <img src="Image/logo.png" alt="Your Logo">
+          </a>
+        </li>
+      </nav>
+      <h1>Recommend Your Faves!</h1>
+    </header>
+
+    <section class="courses">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="Name" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="Email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="Email" name="Email" placeholder="Your email address..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="cuisine">Cuisine</label>
+        </div>
+        <div class="col-75">
+          <select id="cuisine" name="cousine">
+            <option value="sarawakian">Sarawakian</option>
+            <option value="western">Western</option>
+            <option value="asian">Asian</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="Eatery">Favourite Eatery</label>
+        </div>
+        <div class="col-75">
+          <textarea id="Eatery" name="Eatery" placeholder="Share your favourite cuisine, restaurants and many more!"
+            style="height:200px"></textarea>
+        </div>
+      </div>
+
+      <section class="courses">
+        <div class="row">
+          <button type="submit" class="button" onclick="openPopup()">Submit</button>
+          <div class="popup" id="popup">
+            <p>Response submitted. Thank you!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup() {
+          popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+          popup.classList.remove("open-popup");
+        }
+      </script>
+
+      <article>
+        <h2>What People Have to Say</h2>
+
+        <h4>Here are some testimonies from tripAdvisor!</h4>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="Image\chel.jpg">
+              <img src="Image\chel.jpg" alt="chel" width="600" height="400">
+            </a>
+          </div>
+        </div>
+
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="Image\chris.jpg">
+              <img src="Image\chris.jpg" alt="chris" width="600" height="400">
+            </a>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="Image\erico.jpg">
+              <img src="Image\erico.jpg" alt="erico" width="600" height="400">
+            </a>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div style="padding:6px;">
+        </div>
+      </article>
+    </section>
+    <footer>
+      <audio controls autoplay loop>
+        <source src="Audio/sape.mp3" type="audio/mpeg">
+      </audio>
+      <p>© 2024 Kuching's Nyamai. All rights reserved.</p>
+    </footer>
+  </div><!-- .wrapper -->
+</body>
+
+</html>
